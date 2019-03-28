@@ -47,6 +47,11 @@
   .img-content {
     padding-left: 1%;
 
+    @media @mobile {
+      padding-left: 0%;
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
 
@@ -111,26 +116,25 @@
 
       .btn {
         background: @eastern-blue;
-        color: @font-color;
+        color: @white;
         padding: 12px 50px;
         text-align: center;
         font-size: 2rem;
         border-radius: 10px;
         margin-bottom: 10px;
 
+        &:hover {
+          background: @shark;
+          cursor: pointer;
+        }
+
         @media @tablet {
           font-size: 1.5rem;
         }
 
-        &:hover {
-          cursor: pointer;
-        }
-      }
-
-      @media @mobile {
-        .button1 {
-          width: 100%;
-          margin-bottom: 20px;
+        @media @mobile {
+          font-size: 2rem;
+          color: @white;
         }
       }
 
@@ -143,6 +147,7 @@
     @media @mobile {
       flex-direction: column;
       margin: 0 auto;
+      margin-bottom: 34px;
     }
   }
-}
+} // end homepage

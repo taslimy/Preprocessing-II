@@ -32,7 +32,6 @@
         width: 100%;
         margin: 15px 0;
       }
-
     }
 
     .nav {
@@ -44,6 +43,11 @@
       .navItem {
         color: @font-color;
         text-decoration: none;
+
+        &:hover {
+          font-weight: bold;
+          transition: 0.1s ease-out;
+        }
       }
 
       @media @mobile {
